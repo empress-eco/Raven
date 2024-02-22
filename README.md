@@ -1,24 +1,19 @@
 <div align="center">
-    <a href="https://empress.eco/">
-        <img src="https://avatars.githubusercontent.com/u/46308912?s=96&v=4" height="50">
-    </a>
-    <h2>Empress Chat</h2>
-    <p align="center">
-        <p>Message Effortlessly.</p>
-    </p>
+<img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Empress Chat" width="80" height="80">
+<h1>Empress Chat: Seamless Team Communication</h1>
+<p>Streamline your team collaboration with effortless message sharing, file transfers, and more!</p>
 
-[https://empress.eco/app/one/](https://empress.eco/app/chat/)
-
+<a href="https://empress.eco/">Explore the App</a>
+·
+<a href="https://github.com/empress-eco/chat/issues">Report Bug</a>
+·
+<a href="https://github.com/empress-eco/chat/issues">Request Feature</a>
 </div>
 
----
+## About The Project
+Empress Chat is a comprehensive messaging tool tailored for teams that prioritize efficient and streamlined communication. The app allows users to create channels, share messages, transfer files, and more, all conveniently accessible via desktop and mobile devices.
 
-## Welcome to Empress Chat
-
-Empress Chat is a streamlined messaging tool for team collaboration, designed to enhance communication through the creation of channels, message sharing, file transfers, and more, accessible on both desktop and mobile platforms.
-
-## Features
-
+### Key Features
 - **Channels**: Public and private channels for team communication.
 - **Messaging**: Supports text, code blocks, emojis, file, and image sharing.
 - **Mentions**: Tag individuals in messages for direct communication.
@@ -26,71 +21,57 @@ Empress Chat is a streamlined messaging tool for team collaboration, designed to
 - **File Previews**: Inline viewing of images and PDFs.
 - **Comprehensive Search**: Quickly find messages, files, channels, and members.
 - **Dark Mode**: For comfortable use in low-light conditions.
-- **Mobile App**: Keep in touch while on the move (development in progress).
+- **Mobile App**: Keep in touch while on the move.
 
-## Built With
+### Technical Stack
+Empress Chat leverages the power of robust technologies:
+- Backend: Python, Redis, MariaDB, and Socket.io
+- Frontend: React, RadixUI, react-icons, Tiptap, and Tailwind CSS
+- Mobile: Ionic, Tailwind CSS, and Capacitor
 
-Empress Chat incorporates technologies such as Python, Redis, MariaDB, and Socket.io for backend services, and React, RadixUI, react-icons, Tiptap, and Tailwind CSS for the frontend. The mobile experience is powered by Ionic, Tailwind CSS, and Capacitor.
+## Getting Started
 
-## Installation
+### Prerequisites
+Empress Chat can be installed using bench on your local machine or your production site.
 
-Since Empress Chat can be installed using bench on your local machine or on your production site.
-
-Once you have setup your bench and your site, you can install the app via the following commands:
-
+### Installation
+Set up your bench and site, then install the app using these commands:
 
 ```bash
-bench get-app https://github.com/The-Commit-Company/Raven.git
-```
-
-```bash
+git clone https://github.com/empress-eco/chat.git
 bench --site yoursite.name install-app raven
 ```
+Your Empress Chat can be accessed at the /raven endpoint on your site (https://yoursite.com/raven).
+
+## Usage
+
+For local development setup, enable developer mode in your site config. Disable CSRF and allow CORS in your site_config.json.
+
+Start the React live web server:
 
 ```bash
-Post this, you can access Raven on your Frappe site at the /raven endpoint (e.g. https://yoursite.com/raven).
-```
-
-## Local development setup
-
-To set up your local development environment, make sure that you have enabled developer mode in your site config.
-
-You also need to disable CSRF (add ignore_csrf: 1 in your site_config.json) since the React web server will not have any CSRF token in live reload mode. If you are working on the mobile app, you would also need to allow CORS (add allow_cors: "*" in your site_config.json). Please note that this is only for the local dev setup - not meant for Production.
-
-**You can start the React live web server by:**
-
-```bash
-cd frappe-bench/apps/raven
-```
-
-```bash
+cd Empress-bench/apps/raven
 yarn dev
 ```
 
-Your local dev server would be running at http://localhost:8080.
-
-You can also run the mobile app on your browser by:
+You can run the mobile app on your browser:
 
 ```bash
-cd frappe-bench/apps/raven/mobile
-```
-
-```bash
+cd Empress-bench/apps/raven/mobile
 yarn install
-```
-
-```bash
 yarn dev
 ```
 
-## Reporting Bugs
+## Contributing
+We welcome contributions! Here's how you can contribute:
 
-Found a bug? Report it on GitHub Issues, with detailed information to help us fix it quickly.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Attribution
+## License and Acknowledgements
+This project is under the MIT License. Your contributions are also licensed under the MIT License.
 
-Empress Chat was originally developed as "Raven" by contributors at The Commit Company. This project builds upon their foundational work.
-
-## License
-
-Empress Chat is licensed under the AGPLv3. For more information, see the license file.
+Special thanks to the Empress Community for their foundational contributions. Their innovation and dedication have been instrumental in building the foundations and functionalities we rely on. We are profoundly grateful for their pioneering work and ongoing support.
